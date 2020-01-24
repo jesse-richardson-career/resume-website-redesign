@@ -1,0 +1,7 @@
+@import '~src/sass/variables';
+
+//test for variable imports
+* {
+  color: $main-color;
+  background: $sub-color;
+}
