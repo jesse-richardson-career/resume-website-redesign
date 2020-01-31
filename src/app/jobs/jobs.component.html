@@ -1,6 +1,10 @@
-<h2>My Jobs11</h2>
-<ul class="jobs">
-  <li *ngFor="let job of jobs">
-    <span>{{job.id}}</span> {{job.companyName}}
-  </li>
-</ul>
+<div class="jobs-list-section">
+  <h2>My Jobs</h2>
+  <ul class="jobs-list">
+    <li *ngFor="let job of jobs" class="job-tile">
+      <a routerLink="/job/{{job.id}}">
+        {{job.companyName}}
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,2 +1,32 @@
-$main-color: #14ffb1; //Emerald Green
-$sub-color: #323232;  // charcoal
+/*
+  --
+  Color names from Chir.ag’s Name that Color utility
+  http://chir.ag/projects/name-that-color/
+
+
+  --Possible color pallet
+  Main neon green
+  #14ffb1
+
+  Complementary color
+  #ff1462
+  --A few shades lighter
+  c50041
+
+
+  Duotone of 14ffb1 & c50041
+  https://duotone.shapefactory.co/?f=14ffb1&t=c50041&q=_
+
+*/
+
+
+$color-spring-green:  #14ffb1;
+$color-my-sin:        #ffb114;
+$color-monza:         #c50041; //ff1462;
+$color-mine-shaft:    #323232;
+
+
+$main-color:      $color-spring-green;
+$highlight-color: $color-monza;
+$sub-color-1:     $color-mine-shaft;
+$sub-color-2:     $color-my-sin;

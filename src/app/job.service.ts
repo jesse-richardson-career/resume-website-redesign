@@ -12,7 +12,12 @@ export class JobService {
   constructor(private messageService: MessageService) { }
 
   getJobs(): Observable<Job[]> {
-    this.messageService.add('JobService: fetched jobs');
+    this.messageService.add(`JobService: fetched jobs`);
     return of(JOBS);
+  }
+
+  getJob(id: number): Observable<Job> {
+    this.messageService.add('JobService: fetched job id=' + id);
+    return of(JOBS.find(job => job.id === id));
   }
 }
