@@ -1,3 +1,5 @@
+// ---= Colors =--- //
+
 /*
   --
   Color names from Chir.ag’s Name that Color utility
@@ -19,14 +21,22 @@
 
 */
 
-
 $color-spring-green:  #14ffb1;
 $color-my-sin:        #ffb114;
 $color-monza:         #c50041; //ff1462;
 $color-mine-shaft:    #323232;
+$color-white-solid:    #FFFFFF;
 
 
-$main-color:      $color-spring-green;
-$highlight-color: $color-monza;
-$sub-color-1:     $color-mine-shaft;
-$sub-color-2:     $color-my-sin;
+$color-main:      $color-spring-green;
+$color-highlight: $color-monza;
+$color-sub-1:     $color-mine-shaft;
+$color-sub-2:     $color-my-sin;
+$color-sub-light: $color-white-solid;
+
+
+//  ---= Font Sizes =---  //
+$font-x-large: 42px;
+$font-large:   28px;
+$font-medium:  18px;
+$font-small:   9px;

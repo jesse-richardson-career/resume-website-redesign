@@ -1,8 +1,10 @@
-<div *ngIf="messageService.messages.length" class="message-list">
+<div class="panel panel-dark">
+  <div *ngIf="messageService.messages.length" class="message-list">
 
-  <h2>Messages</h2>
-  <button class="clear button primary-button"
-          (click)="messageService.clear()">clear</button>
-  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+    <h2>Messages</h2>
+    <button class="clear button primary-button"
+            (click)="messageService.clear()">clear</button>
+    <div *ngFor='let message of messageService.messages'> {{message}} </div>
 
+  </div>
 </div>

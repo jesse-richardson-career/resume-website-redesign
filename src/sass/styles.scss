@@ -1,52 +1,28 @@
 @import './variables';
 @import './mixins';
 
-//-- resets --//
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-*:focus {
-    outline: 0 !important;
-}
 
-
+// -= Main Styles =-
 body {
   font-family: vt323, sans-serif;
-  color: $sub-color-1;
+  color: $color-sub-1;
   background: black;
+  font-size: $font-medium;
 }
 
-//-- button and link styles --/
-.button {
-  border: none;
-  outline:none;
-  margin: 0;
+.panel {
+  width: 90%;
+  margin: auto;
+  padding: 12px;
 
-  &:hover {
-    border-width: 2px;
-    margin-top: 2px;
+  &.panel-green {
+    background: $color-main;
   }
 
-  &:active {
-    border-width: 0px;
-    margin-top: 4px;
+  &.panel-dark {
+    color: $color-sub-2;
   }
 }
 
-.primary-button {
-  background-color: $highlight-color;
-  color: $sub-color-1;
-  border-bottom: solid 4px $sub-color-1;
-}
 
-a, a:link {
-  color: inherit;
-  text-decoration: underline;
-
-  &:hover, &:active {
-    color: $highlight-color;
-    text-decoration: none;
-  }
-}
+@import './buttons';

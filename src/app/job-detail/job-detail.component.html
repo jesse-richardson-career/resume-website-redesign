@@ -1,3 +1,13 @@
-<p>job-detail works!</p>
-<h2>{{job.companyName}}</h2>
-<p>{{job.jobTitle}}</p>
+<div class="panel">
+  <p>job-detail works!</p>
+  <h2>{{job.companyName}}</h2>
+  <p>{{job.jobTitle}}</p>
+  <p>{{job.dateRange}}</p>
+  <ul class="descriptions-list">
+    <li *ngFor="let description of job.descriptions" class="job-descriptions">
+      <p>
+        {{description}}
+      </p>
+    </li>
+  </ul>
+</div>

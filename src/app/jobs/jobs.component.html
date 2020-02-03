@@ -1,8 +1,8 @@
-<div class="jobs-list-section">
+<div class="jobs-list-section panel panel-green">
   <h2>My Jobs</h2>
   <ul class="jobs-list">
     <li *ngFor="let job of jobs" class="job-tile">
-      <a routerLink="/job/{{job.id}}">
+      <a routerLink="/job/{{job.id}}" class="link">
         {{job.companyName}}
       </a>
     </li>
