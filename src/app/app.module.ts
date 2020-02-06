@@ -10,6 +10,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { StyleGuideComponent } from './style-guide/style-guide.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StyleGuideComponent } from './style-guide/style-guide.component';
     MainMenuComponent,
     AboutComponent,
     ContactComponent,
-    StyleGuideComponent
+    StyleGuideComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

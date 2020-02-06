@@ -10,6 +10,8 @@ body {
   font-size: $font-medium;
 }
 
+@import 'animations';
+
 .panel {
   width: 90%;
   margin: auto;
@@ -26,3 +28,16 @@ body {
 
 
 @import './buttons';
+
+
+/* Pixel Moji stuff
+http://www.avatarsinpixels.com/minipix/Backup
+
+http://www.avatarsinpixels.com/minipix/5/158075627325269/avatar.png
+
+DIRECT LINK
+http://www.avatarsinpixels.com/minipix/eyJTb2NrcyI6IjQiLCJQYW50cyI6IjEiLCJUb3AiOiIxMCIsIkhhaXIiOiIxMCIsIkdsYXNzZXMiOiIxIiwic2tpblRvbmUiOiJmM2FjN2UiLCJoYWlyVG9uZSI6IjhiNGQyNCIsInBhbnRzVG9uZSI6Ijg4ODg4OCIsInRvcFRvbmUiOiIwMGMyODIiLCJ0b3BUb25lMiI6IjQwNzI1NiJ9/1/show.png
+
+SAVE AS TEXT
+eyJTb2NrcyI6IjQiLCJQYW50cyI6IjEiLCJUb3AiOiIxMCIsIkhhaXIiOiIxMCIsIkdsYXNzZXMiOiIxIiwic2tpblRvbmUiOiJmM2FjN2UiLCJoYWlyVG9uZSI6IjhiNGQyNCIsInBhbnRzVG9uZSI6Ijg4ODg4OCIsInRvcFRvbmUiOiIwMGMyODIiLCJ0b3BUb25lMiI6IjQwNzI1NiJ9
+*/

@@ -1,0 +1,37 @@
+@import './variables';
+
+.gem-chart {
+  width: 100%;
+
+  .gem-row {
+    margin-bottom: 8px;
+
+    .label {
+      width: 25%;
+      height: 50px;
+      display: inline-block;
+      line-height: 50px;
+      vertical-align: middle;
+      color: $color-highlight;
+      font-size: $font-large;
+    }
+
+    .gem {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      line-height: normal;
+      vertical-align: middle;
+      background-image: url("/assets/images/gems/gem-empty-trim.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+
+      &.gem-full {
+          background-image: url("/assets/images/gems/gem-green-trim.png");
+      }
+
+    }
+  }
+}
