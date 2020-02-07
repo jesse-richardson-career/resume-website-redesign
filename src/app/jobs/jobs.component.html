@@ -2,9 +2,11 @@
   <h2>My Jobs</h2>
   <ul class="jobs-list">
     <li *ngFor="let job of jobs" class="job-tile">
-      <a routerLink="/job/{{job.id}}" class="link">
-        {{job.companyName}}
-      </a>
+
+        <div class="job-company">{{job.companyName}}</div>
+        <div class="job-job-title">{{job.jobTitle}}</div>
+        <div class="job-date">{{job.dateRange}}</div>
+        <a routerLink="/jobs/{{job.id}}" class="button primary-button">continue?</a>
     </li>
   </ul>
 </div>

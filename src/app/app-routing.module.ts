@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'skills',  component: SkillsComponent },
   { path: '', redirectTo: '/jobs', pathMatch: 'full' },
   { path: 'jobs',   component: JobsComponent},
-  { path: 'job/:id',component: JobDetailComponent },
+  { path: 'jobs/:id',component: JobDetailComponent },
   { path: 'about',  component: AboutComponent },
   { path: 'style',  component: StyleGuideComponent },
 ]

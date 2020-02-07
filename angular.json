@@ -33,7 +33,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/sass"
+                "src/sass",
               ]
             },
             "scripts": []
@@ -104,7 +104,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/sass"
+                "src/sass",
               ]
             },
             "scripts": []
