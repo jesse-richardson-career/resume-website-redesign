@@ -1,0 +1,30 @@
+@import '~src/sass/variables';
+
+.contact-section {
+  position: fixed;
+  bottom: 0px;
+  height: 235px;
+  width: 100%;
+
+  /*
+  background-image: url("/assets/images/avatar.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  */
+
+  .contact-content {
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0px;
+    color: $color-sub-2;
+    background: $color-sub-1;
+
+    .phone-number {
+      margin-bottom: 0px;
+    }
+
+  }
+}

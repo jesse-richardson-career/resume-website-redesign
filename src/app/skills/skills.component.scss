@@ -2,6 +2,7 @@
 
 .gem-chart {
   width: 100%;
+  text-align: center;
 
   .gem-row {
     margin-bottom: 25px;
@@ -14,6 +15,7 @@
       vertical-align: middle;
       color: $color-highlight;
       font-size: $font-large;
+      text-align: right;
     }
 
     .gem {
