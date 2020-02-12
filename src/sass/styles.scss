@@ -1,6 +1,6 @@
+@import 'resets';
 @import './variables';
 @import './mixins';
-
 
 // -= Main Styles =-
 body {
@@ -21,6 +21,7 @@ body {
   width: 90%;
   margin: auto;
   padding: 12px;
+  z-index: 1;
 
   &.panel-green {
     background: $color-main;

@@ -1,12 +1,12 @@
 <div class="jobs-list-section panel panel-green">
   <h2>My Jobs</h2>
   <ul class="jobs-list">
-    <li *ngFor="let job of jobs" class="job-tile">
+    <li *ngFor="let job of jobs;  let i = index" class="job-tile">
 
         <div class="job-company">{{job.companyName}}</div>
         <div class="job-job-title">{{job.jobTitle}}</div>
         <div class="job-date">{{job.dateRange}}</div>
-        <a routerLink="/jobs/{{job.id}}" class="button primary-button">continue?</a>
+        <a routerLink="/jobs/{{job.id}}" class="button primary-button">Save Slot {{i+1}}</a>
     </li>
   </ul>
 </div>
