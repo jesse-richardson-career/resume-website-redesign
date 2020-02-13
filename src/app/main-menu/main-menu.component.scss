@@ -35,20 +35,7 @@
 
       @include media-breakpoint-down(sm) {
         margin-left: 8px;
-       }
+      }
     }
   }
-
-  .avatar {
-    height: 210px;
-    width: 120px;
-    //background: rgba( red($color-sub-1), green($color-sub-1), blue($color-sub-1), .5);
-    background-image: url("/assets/images/avatar.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: fixed;
-    right: 5%;
-    top: 50px;
-  }
-
 }

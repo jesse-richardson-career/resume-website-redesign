@@ -8,8 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { StyleGuideComponent } from './style-guide/style-guide.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/skills', pathMatch: 'full' },
   { path: 'skills',  component: SkillsComponent },
-  { path: '', redirectTo: '/jobs', pathMatch: 'full' },
   { path: 'jobs',   component: JobsComponent},
   { path: 'jobs/:id',component: JobDetailComponent },
   { path: 'about',  component: AboutComponent },

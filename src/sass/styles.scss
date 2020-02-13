@@ -1,3 +1,8 @@
+//@import bootstrap variables and mixins
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+
 @import 'resets';
 @import './variables';
 @import './mixins';
@@ -12,7 +17,6 @@ body {
 
 .main-content-area {
   margin-bottom: 140px;
-
 }
 
 @import 'animations';
@@ -47,3 +51,24 @@ http://www.avatarsinpixels.com/minipix/eyJTb2NrcyI6IjQiLCJQYW50cyI6IjEiLCJUb3AiO
 SAVE AS TEXT
 eyJTb2NrcyI6IjQiLCJQYW50cyI6IjEiLCJUb3AiOiIxMCIsIkhhaXIiOiIxMCIsIkdsYXNzZXMiOiIxIiwic2tpblRvbmUiOiJmM2FjN2UiLCJoYWlyVG9uZSI6IjhiNGQyNCIsInBhbnRzVG9uZSI6Ijg4ODg4OCIsInRvcFRvbmUiOiIwMGMyODIiLCJ0b3BUb25lMiI6IjQwNzI1NiJ9
 */
+.avatar {
+  height: 210px;
+  width: 120px;
+  //background: rgba( red($color-sub-1), green($color-sub-1), blue($color-sub-1), .5);
+  background-image: url("/assets/images/avatar.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  right: 5%;
+  top: 50px;
+
+  @include media-breakpoint-down(sm) {
+    height: 110px;
+    width: 110px;
+
+    left: -10px;
+    top: auto;
+    bottom: -2px;
+    background-size: contain;
+   }
+}

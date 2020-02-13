@@ -1,5 +1,47 @@
+//@import bootstrap variables and mixins
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+
 @import '~src/sass/variables';
 
 .jobs-list-section {
 
+  .job-tile {
+    border: solid 2px $color-sub-1;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    .job-company {
+      font-size: 1.2em;
+      margin-bottom: 8px;
+      width: 100%;
+    }
+    .job-row {
+      display: flex;
+      justify-content: space-between;
+
+      .job-job-title {
+        display: inline-block;
+      }
+      .job-date {
+        display: inline-block;
+      }
+
+      @include media-breakpoint-down(sm) {
+        display: block;
+
+        .job-job-title {
+          display: block;
+        }
+        .job-date {
+          display: block;
+        }
+      }
+    }
+    .primary-button {
+      margin: 10px 0 0 0;
+    }
+  }
 }

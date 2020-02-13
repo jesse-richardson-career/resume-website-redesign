@@ -1,7 +1,7 @@
 <div class="panel panel-green">
   <h2>{{job.companyName}}</h2>
-  <p>{{job.jobTitle}}</p>
-  <p>{{job.dateRange}}</p>
+  <p class="job-title">{{job.jobTitle}}</p>
+  <p class="date-range">{{job.dateRange}}</p>
   <ul class="descriptions-list">
     <li *ngFor="let description of job.descriptions" class="job-descriptions">
       <p>
@@ -9,5 +9,5 @@
       </p>
     </li>
   </ul>
-  <button (click)="goBack()" class="button primary-button">go back</button>
+  <button (click)="goBack()" class="button primary-button">Go Back</button>
 </div>
