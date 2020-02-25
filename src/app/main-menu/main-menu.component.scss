@@ -14,6 +14,10 @@
   text-align: center;
   z-index: 1;
 
+  @include media-breakpoint-down(sm) {
+    margin: 8px auto;
+  }
+
   .menu-bar {
     display: inline-block;
     z-index: 100;
@@ -29,6 +33,13 @@
     width: 140px;
     line-height: (42px);
     font-size: $font-x-large;
+
+    @include media-breakpoint-down(sm) {
+      width: 130px;
+      margin-left: 8px;
+      margin-right: 8px;      
+      font-size: $font-large;
+    }
 
     &:first-child {
       margin-left: 0px;
